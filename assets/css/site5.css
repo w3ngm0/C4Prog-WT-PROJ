@@ -1,0 +1,188 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* light background color */
+    color: #000000; /* black */
+}
+
+/* Container Styles */
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #FFDAB9; /* Peach Puff */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust the width as needed to make the logo smaller */
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C1362; /* Dark blue */
+}
+
+header .header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #7C420B; /* Brown */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF; /* white */
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Phases Navigation Styles */
+.phases-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; /* white */
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.phases-nav ul li {
+    margin: 0 10px;
+}
+
+.phases-nav ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-weight: bold;
+}
+
+.phases-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards Styles */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #FFFFFF; /* white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-text {
+    padding: 15px;
+    font-size: 18px;
+    color: #2C1362; /* Dark blue */
+}
+
+/* Phases Grid Styles */
+.phases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.phase-card {
+    background-color: #FFFFFF; /* white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.phase-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.phase-card .card-text {
+    padding: 15px;
+    font-size: 18px;
+    color: #2C1362; /* Dark blue */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DFEFFA; /* lighter Blue */
+    color: #985008; /* Light brown */
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #E47D5E; /* Burnt Sienna */
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}

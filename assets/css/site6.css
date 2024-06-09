@@ -1,0 +1,158 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFE4E1; /* Misty Rose */
+    color: #000000; /* black */
+}
+
+/* Container Styles */
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #FFDAB9; /* Peach Puff */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust the width as needed to make the logo smaller */
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C1362; /* Dark blue */
+}
+
+header .header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #7C420B; /* Brown */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF; /* white */
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.projects-list {
+    width: 45%;
+}
+
+.project {
+    background-color: #FFFFFF; /* white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2C1362; /* Dark blue */
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project p a {
+    color: #4996DF; /* Havelock Blue */
+    text-decoration: none;
+}
+
+.project p a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DFEFFA; /* lighter Blue */
+    color: #985008; /* Light brown */
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #E47D5E; /* Burnt Sienna */
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
