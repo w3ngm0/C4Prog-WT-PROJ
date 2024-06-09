@@ -1,0 +1,188 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* light background color */
+    color: #000000; /* black */
+}
+
+/* Container Styles */
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #E0E0FF; /* light blue background */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust the width as needed to make the logo smaller */
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C1362; /* Dark blue */
+}
+
+header .header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #7C420B; /* Brown */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF; /* white */
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-form {
+    background-color: #FFFFFF; /* white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C3b7fb; /* Lavender */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #824EE9; /* Fuchsia blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #6c3bb3;
+}
+
+/* Contact Links Styles */
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-method {
+    background-color: #FFBF00; /* Amber */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-method a {
+    text-decoration: none;
+    color: #FFFFFF; /* white */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DFEFFA; /* lighter Blue */
+    color: #985008; /* Light brown */
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #E47D5E; /* Burnt Sienna */
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
