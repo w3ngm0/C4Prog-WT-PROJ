@@ -1,0 +1,179 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF; /* AliceBlue */
+    color: #000000; /* black */
+}
+
+/* Container Styles */
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #87CEFA; /* Light Sky Blue */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust the width as needed to make the logo smaller */
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C1362; /* Dark blue */
+}
+
+header .header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #7C420B; /* Brown */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF; /* white */
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    text-align: left;
+    padding: 40px;
+}
+
+.resume-content {
+    background-color: #FFFFFF; /* white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 2px solid #C3b7fb; /* Lavender */
+}
+
+.resume-details {
+    background-color: #C3b7fb; /* Lavender */
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.resume-sections {
+    margin-top: 20px;
+}
+
+.resume-sections h2 {
+    font-size: 24px;
+    color: #2C1362; /* Dark blue */
+}
+
+.resume-sections ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-sections ul li {
+    margin: 10px 0;
+}
+
+.resume-sections ul li a {
+    text-decoration: none;
+    color: #4996DF; /* Havelock Blue */
+    font-size: 18px;
+}
+
+.resume-sections ul li a:hover {
+    text-decoration: underline;
+}
+
+section h3 {
+    color: #2C1362; /* Dark blue */
+    margin-top: 0;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DFEFFA; /* lighter Blue */
+    color: #985008; /* Light brown */
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #E47D5E; /* Burnt Sienna */
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
