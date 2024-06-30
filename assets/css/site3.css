@@ -132,3 +132,36 @@ footer nav ul li a {
 footer nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Mobile/Media Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    article {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+}

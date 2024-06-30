@@ -4,50 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cert IV Programming Profile</title>
-    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
-<body>
-<div class="container">
-    <header>
-        <section class="header-content">
-
+<body class="bg-gray-100 text-gray-900">
+<div class="container mx-auto p-4 bg-white shadow-lg rounded-lg">
+    <header class="text-center mb-8 bg-blue-500 text-white p-6 rounded-t-lg">
+        <section class="flex justify-center items-center mb-4">
             <aside class="logo">
-                <img src="assets/img/logo.png" alt="Logo">
+                <img src="assets/img/logo.png" alt="Logo" class="w-32 h-auto rounded-lg shadow-lg">
             </aside>
-
-
         </section>
-        <h1>Cert IV Programming</h1>
-        <h2>My Journey into the World of Coding</h2>
+        <h1 class="text-4xl font-bold mb-2">Cert IV Programming</h1>
+        <h2 class="text-2xl font-semibold text-gray-100">My Journey into the World of Coding</h2>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
+    <nav class="mb-8 bg-blue-200 p-4 rounded-lg">
+        <ul class="flex justify-center space-x-6 text-lg">
+            <li><a href="index.html" class="text-blue-700 hover:text-blue-900">Home</a></li>
+            <li><a href="contact.html" class="text-blue-700 hover:text-blue-900">Contacts</a></li>
+            <li><a href="about.html" class="text-blue-700 hover:text-blue-900">About</a></li>
+            <li><a href="resume.html" class="text-blue-700 hover:text-blue-900">Resume</a></li>
+            <li><a href="projects.html" class="text-blue-700 hover:text-blue-900">Projects</a></li>
         </ul>
     </nav>
 
-    <main>
-        <article class="introduction">
-            <p>Welcome to my Personal Profile! This profile was made to be both innovative and user-friendly.</p>
-            <button class="arrow left" onclick="changeImage(-1)">&#9664;</button>
-            <img id="intro-image" src="assets/img/intro_image1.png" alt="Introduction Image">
-            <button class="arrow right" onclick="changeImage(1)">&#9654;</button>
+    <main class="text-center mb-8">
+        <article class="introduction mb-8">
+            <p class="mb-4 text-lg text-gray-700">Welcome to my Personal Profile! This profile was made to be both innovative and user-friendly.</p>
+            <div class="flex justify-center items-center">
+                <button class="arrow left bg-pink-400 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-l" onclick="changeImage(-1)">&#9664;</button>
+                <img id="intro-image" src="assets/img/intro_image1.png" alt="Introduction Image" class="w-64 h-auto mx-4 rounded-lg shadow-lg">
+                <button class="arrow right bg-pink-400 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-r" onclick="changeImage(1)">&#9654;</button>
+            </div>
         </article>
     </main>
 
-    <footer>
-        <p>&copy; Kelden Wangmo | C4PROG-WT-PROJ</p>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://screencraft.net.au" target="_blank">ScreenCraft</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <footer class="mt-8 text-center bg-gray-200 p-4 rounded-b-lg">
+        <p class="text-gray-600">&copy; Kelden Wangmo | C4PROG-WT-PROJ</p>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="about.html" class="text-blue-700 hover:text-blue-900">About</a></li>
+                <li><a href="index.html" class="text-blue-700 hover:text-blue-900">Home</a></li>
+                <li><a href="https://screencraft.net.au" target="_blank" class="text-blue-700 hover:text-blue-900">ScreenCraft</a></li>
+                <li><a href="contact.html" class="text-blue-700 hover:text-blue-900">Contact</a></li>
             </ul>
         </nav>
     </footer>

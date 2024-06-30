@@ -51,6 +51,10 @@ header .header-text h2 {
 }
 
 /* Navigation Styles */
+nav {
+    position: relative;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -74,65 +78,53 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Phases Navigation Styles */
-.phases-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF; /* white */
-    margin: 20px 0;
+/* Dropdown Navigation for Mobile */
+.nav-toggle {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #4996DF; /* Havelock Blue */
+    color: #FFFFFF;
     padding: 10px;
     border-radius: 8px;
 }
 
-.phases-nav ul li {
-    margin: 0 10px;
-}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
 
-.phases-nav ul li a {
-    text-decoration: none;
-    color: #4996DF; /* Havelock Blue */
-    font-weight: bold;
-}
+    .nav-toggle {
+        display: flex;
+    }
 
-.phases-nav ul li a:hover {
-    text-decoration: underline;
-}
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
-/* Project Cards Styles */
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
+    nav ul.show {
+        display: flex;
+    }
 
-.project-card {
-    background-color: #FFFFFF; /* white */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    overflow: hidden;
-    text-align: center;
-    width: 250px;
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-text {
-    padding: 15px;
-    font-size: 18px;
-    color: #2C1362; /* Dark blue */
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
 
 /* Phases Grid Styles */
 .phases-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -143,6 +135,12 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.phase-card:hover {
+    transform: scale(1.05);
 }
 
 .phase-card img {
@@ -185,4 +183,48 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Mobile/Media Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .phases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
 }
