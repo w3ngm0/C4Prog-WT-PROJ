@@ -1,4 +1,5 @@
-// script.js
+// assets/js/script.js
+
 
 let currentImageIndex = 1; // Start with the second image
 const images = [
