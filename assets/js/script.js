@@ -19,5 +19,8 @@ function changeImage(direction) {
 
 // Set the initial image source on page load
 window.onload = function() {
-    document.getElementById('intro-image').src = images[currentImageIndex];
+    const introImage = document.getElementById('intro-image');
+    if (introImage) {
+        introImage.src = images[currentImageIndex];
+    }
 };
